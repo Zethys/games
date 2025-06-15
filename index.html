@@ -1,33 +1,94 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Главная</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Главная — Мои Игры</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at top, #0f0f1c, #000);
+      color: #ccfaff;
+    }
+
+    header {
+      background-color: #0a0a1a;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 0 30px #00ffff33;
+    }
+
+    header h1 {
+      color: #00ffff;
+      font-size: 2.8em;
+      text-shadow: 0 0 15px #00ffff;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #99ffff;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+      text-shadow: 0 0 8px #00ffff;
+    }
+
+    main.main-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 2em;
+      color: #66ffff;
+      text-shadow: 0 0 10px #00ffff;
+    }
+
+    main p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 20px auto;
+      color: #cceeff;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #0a0a1a;
+      text-align: center;
+      padding: 20px;
+      color: #00ffff;
+      font-size: 0.9em;
+      border-top: 1px solid #003344;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Добро пожаловать в мой игровой мир</h1>
+    <h1>Добро пожаловать!</h1>
     <nav>
+      <a href="index.html">Главная</a>
       <a href="games.html">Мои любимые игры</a>
       <a href="about.html">Обо мне</a>
       <a href="contact.html">Контакты</a>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Здесь собраны игры, которые запали в душу</h2>
-      <p>Этот сайт — небольшое путешествие по самым любимым играм, в которые я играл с удовольствием. От эпичных RPG до выживальщиков, от шутеров до инди — каждая из них уникальна и заслуживает внимания.</p>
-
-      <p>На странице «Мои любимые игры» ты найдёшь подробные описания, скриншоты и мои впечатления. В разделе «Обо мне» я рассказал немного о себе и своей любви к играм. А если хочешь связаться — заходи в «Контакты».</p>
-
-      <p>Надеюсь, тебе будет интересно так же, как и мне!</p>
-    </section>
+  <main class="main-section">
+    <h2>Здесь собраны игры, которые запали в душу</h2>
+    <p>Этот сайт — небольшое путешествие по самым любимым играм, в которые я играл с удовольствием. От эпичных RPG до выживальщиков, от шутеров до инди — каждая из них уникальна и заслуживает внимания.</p>
+    <p>На странице «Мои любимые игры» ты найдёшь подробные описания, скриншоты и мои впечатления. В разделе «Обо мне» я рассказал немного о себе и своей любви к играм. А если хочешь связаться — заходи в «Контакты».</p>
+    <p>Надеюсь, тебе будет интересно так же, как и мне!</p>
   </main>
 
   <footer>
-    <p>&copy; 2025 Мои любимые игры</p>
+    <p>&copy; 2025 Мой игровой сайт</p>
   </footer>
 </body>
 </html>
