@@ -2,51 +2,46 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Мои любимые игры</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      color: #f0f0f0;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: radial-gradient(circle at top, #0f0f1c, #000);
-      color: #ccfaff;
+      font-family: 'Orbitron', sans-serif;
     }
 
     header {
-      background-color: #0a0a1a;
-      padding: 30px 20px;
+      background-color: #111;
+      padding: 20px 0;
       text-align: center;
-      box-shadow: 0 0 30px #00ffff33;
+      border-bottom: 1px solid #00ffc3;
+      box-shadow: 0 0 20px rgba(0, 255, 200, 0.2);
     }
 
     header h1 {
-      color: #00ffff;
-      font-size: 2.8em;
-      text-shadow: 0 0 15px #00ffff;
+      color: #00ffc3;
+      font-size: 2.5em;
+      text-shadow: 0 0 10px #00ffc3, 0 0 20px #00ffc3;
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 15px;
     }
 
     nav a {
+      color: #00ffc3;
       margin: 0 15px;
       text-decoration: none;
-      color: #99ffff;
-      font-weight: bold;
       font-size: 1.1em;
-      transition: color 0.3s;
+      transition: color 0.3s, text-shadow 0.3s;
     }
 
     nav a:hover {
-      color: #00ffff;
-      text-shadow: 0 0 8px #00ffff;
-    }
-
-    footer {
-      background-color: #0a0a1a;
-      text-align: center;
-      padding: 20px;
-      color: #00ffff;
-      font-size: 0.9em;
-      border-top: 1px solid #003344;
+      color: #ffffff;
+      text-shadow: 0 0 10px #00ffc3;
     }
 
     .games {
@@ -62,30 +57,42 @@
       background: #1e1e1e;
       padding: 20px;
       border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0, 255, 200, 0.2);
+      box-shadow: 0 0 15px rgba(0, 255, 200, 0.15);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .game-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 25px rgba(0, 255, 200, 0.3);
+      box-shadow: 0 0 30px rgba(0, 255, 200, 0.4);
     }
 
     .game-card img {
       width: 100%;
       border-radius: 10px;
       margin-bottom: 15px;
+      box-shadow: 0 0 10px rgba(0, 255, 200, 0.2);
     }
 
     .game-card h2 {
       color: #00ffc3;
       margin: 0 0 10px;
       font-size: 1.4em;
+      text-shadow: 0 0 5px #00ffc3;
     }
 
     .game-card p {
       font-size: 0.95em;
       color: #d0fdfd;
+    }
+
+    footer {
+      background-color: #111;
+      padding: 15px;
+      text-align: center;
+      color: #888;
+      font-size: 0.9em;
+      border-top: 1px solid #00ffc3;
+      box-shadow: 0 0 20px rgba(0, 255, 200, 0.15) inset;
     }
   </style>
 </head>
@@ -102,6 +109,28 @@
 
   <main>
     <section class="games">
+      <div class="game-card"><img src="images/witcher3.jpg" alt="Witcher 3"><h2>The Witcher 3</h2><p>Фэнтези-RPG с потрясающим миром, интересным сюжетом и Геральтом из Ривии.</p></div>
+      <div class="game-card"><img src="images/reddead2.jpg" alt="Red Dead Redemption 2"><h2>Red Dead Redemption 2</h2><p>История ковбоев на Диком Западе, шикарная графика и глубокая атмосфера.</p></div>
+      <div class="game-card"><img src="images/eldenring.jpg" alt="Elden Ring"><h2>Elden Ring</h2><p>Открытый мир в стиле Dark Souls от FromSoftware. Хардкор и стиль!</p></div>
+      <div class="game-card"><img src="images/cyberpunk.jpg" alt="Cyberpunk 2077"><h2>Cyberpunk 2077</h2><p>Будущее, импланты, неон и атмосфера большого мегаполиса.</p></div>
+      <div class="game-card"><img src="images/darksouls3.jpg" alt="Dark Souls 3"><h2>Dark Souls 3</h2><p>Темное фэнтези, боссы и челлендж для настоящих геймеров.</p></div>
+      <div class="game-card"><img src="images/hollowknight.jpg" alt="Hollow Knight"><h2>Hollow Knight</h2><p>Инди-метроидвания с красивым миром и сложным геймплеем.</p></div>
+      <div class="game-card"><img src="images/daysgone.jpg" alt="Days Gone"><h2>Days Gone</h2><p>Выживание среди зомби в постапокалипсисе на мотоцикле.</p></div>
+      <div class="game-card"><img src="images/dyinglight.jpg" alt="Dying Light"><h2>Dying Light</h2><p>Паркур, зомби и напряжённая атмосфера ночного выживания.</p></div>
+      <div class="game-card"><img src="images/projectzomboid.jpg" alt="Project Zomboid"><h2>Project Zomboid</h2><p>Изометрическое выживание с упором на реализм.</p></div>
+      <div class="game-card"><img src="images/tarkov.jpg" alt="Escape from Tarkov"><h2>Escape from Tarkov</h2><p>Хардкорный шутер с лутом и сложной экономикой.</p></div>
+      <div class="game-card"><img src="images/dayz.jpg" alt="DayZ"><h2>DayZ</h2><p>ММО-выживание в заражённом мире.</p></div>
+      <div class="game-card"><img src="images/skyrim.jpg" alt="Skyrim"><h2>Skyrim</h2><p>Эпическое фэнтези с открытым миром и драконами.</p></div>
+      <div class="game-card"><img src="images/gta5.jpg" alt="GTA 5"><h2>GTA 5</h2><p>Открытый город, криминальный сюжет и онлайн-веселье.</p></div>
+      <div class="game-card"><img src="images/mafia.jpg" alt="Mafia"><h2>Mafia</h2><p>История мафии в антураже 30-х годов.</p></div>
+      <div class="game-card"><img src="images/metroexodus.jpg" alt="Metro Exodus"><h2>Metro Exodus</h2><p>Постапокалипсис на поверхности, поезд и выживание.</p></div>
+      <div class="game-card"><img src="images/lastlight.jpg" alt="Last Light"><h2>Metro Last Light</h2><p>Шутер с сильной историей и атмосферой подземки.</p></div>
+      <div class="game-card"><img src="images/redux.jpg" alt="Redux"><h2>Metro Redux</h2><p>Переиздание первых частей с улучшенной графикой.</p></div>
+      <div class="game-card"><img src="images/warcraft3.jpg" alt="Warcraft 3"><h2>Warcraft 3</h2><p>Классическая RTS с потрясающим лором.</p></div>
+      <div class="game-card"><img src="images/starcraft2.jpg" alt="Starcraft 2"><h2>Starcraft 2</h2><p>Футуристическая стратегия с киберспортивной сценой.</p></div>
+      <div class="game-card"><img src="images/stalker.jpg" alt="S.T.A.L.K.E.R."><h2>Все части S.T.A.L.K.E.R.</h2><p>Зона, мутанты, артефакты и жуткая атмосфера.</p></div>
+      <div class="game-card"><img src="images/stardew.jpg" alt="Stardew Valley"><h2>Stardew Valley</h2><p>Милая ферма, отношения и расслабляющий геймплей.</p></div>
+      <div class="game-card"><img src="images/terraria.jpg" alt="Terraria"><h2>Terraria</h2><p>Пиксельное приключение с крафтом и боссами.</p></div>
     </section>
   </main>
 
