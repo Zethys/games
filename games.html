@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Мои любимые игры</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 40px 20px;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    .game-card {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 255, 200, 0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(0, 255, 200, 0.3);
+    }
+
+    .game-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .game-card h2 {
+      color: #00ffc3;
+      margin: 0 0 10px;
+      font-size: 1.4em;
+    }
+
+    .game-card p {
+      font-size: 0.95em;
+      color: #d0fdfd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Мои любимые игры</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="games.html">Мои любимые игры</a>
+      <a href="about.html">Обо мне</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="games">
+      <!-- Карточки игр -->
+      <div class="game-card"><img src="images/witcher3.jpg" alt="Witcher 3"><h2>The Witcher 3</h2><p>Фэнтези-RPG с потрясающим миром, интересным сюжетом и Геральтом из Ривии.</p></div>
+      <div class="game-card"><img src="images/reddead2.jpg" alt="Red Dead Redemption 2"><h2>Red Dead Redemption 2</h2><p>История ковбоев на Диком Западе, шикарная графика и глубокая атмосфера.</p></div>
+      <div class="game-card"><img src="images/eldenring.jpg" alt="Elden Ring"><h2>Elden Ring</h2><p>Открытый мир в стиле Dark Souls от FromSoftware. Хардкор и стиль!</p></div>
+      <div class="game-card"><img src="images/cyberpunk.jpg" alt="Cyberpunk 2077"><h2>Cyberpunk 2077</h2><p>Будущее, импланты, неон и атмосфера большого мегаполиса.</p></div>
+      <div class="game-card"><img src="images/darksouls3.jpg" alt="Dark Souls 3"><h2>Dark Souls 3</h2><p>Темное фэнтези, боссы и челлендж для настоящих геймеров.</p></div>
+      <div class="game-card"><img src="images/hollowknight.jpg" alt="Hollow Knight"><h2>Hollow Knight</h2><p>Инди-метроидвания с красивым миром и сложным геймплеем.</p></div>
+
+      <div class="game-card"><img src="images/daysgone.jpg" alt="Days Gone"><h2>Days Gone</h2><p>Выживание среди зомби в постапокалипсисе на мотоцикле.</p></div>
+      <div class="game-card"><img src="images/dyinglight.jpg" alt="Dying Light"><h2>Dying Light</h2><p>Паркур, зомби и напряжённая атмосфера ночного выживания.</p></div>
+      <div class="game-card"><img src="images/projectzomboid.jpg" alt="Project Zomboid"><h2>Project Zomboid</h2><p>Изометрическое выживание с упором на реализм.</p></div>
+      <div class="game-card"><img src="images/tarkov.jpg" alt="Escape from Tarkov"><h2>Escape from Tarkov</h2><p>Хардкорный шутер с лутом и сложной экономикой.</p></div>
+      <div class="game-card"><img src="images/dayz.jpg" alt="DayZ"><h2>DayZ</h2><p>ММО-выживание в заражённом мире.</p></div>
+      <div class="game-card"><img src="images/skyrim.jpg" alt="Skyrim"><h2>Skyrim</h2><p>Эпическое фэнтези с открытым миром и драконами.</p></div>
+      <div class="game-card"><img src="images/gta5.jpg" alt="GTA 5"><h2>GTA 5</h2><p>Открытый город, криминальный сюжет и онлайн-веселье.</p></div>
+      <div class="game-card"><img src="images/mafia.jpg" alt="Mafia"><h2>Mafia</h2><p>История мафии в антураже 30-х годов.</p></div>
+      <div class="game-card"><img src="images/metroexodus.jpg" alt="Metro Exodus"><h2>Metro Exodus</h2><p>Постапокалипсис на поверхности, поезд и выживание.</p></div>
+      <div class="game-card"><img src="images/lastlight.jpg" alt="Last Light"><h2>Metro Last Light</h2><p>Шутер с сильной историей и атмосферой подземки.</p></div>
+      <div class="game-card"><img src="images/redux.jpg" alt="Redux"><h2>Metro Redux</h2><p>Переиздание первых частей с улучшенной графикой.</p></div>
+      <div class="game-card"><img src="images/warcraft3.jpg" alt="Warcraft 3"><h2>Warcraft 3</h2><p>Классическая RTS с потрясающим лором.</p></div>
+      <div class="game-card"><img src="images/starcraft2.jpg" alt="Starcraft 2"><h2>Starcraft 2</h2><p>Футуристическая стратегия с киберспортивной сценой.</p></div>
+      <div class="game-card"><img src="images/stalker.jpg" alt="S.T.A.L.K.E.R."><h2>Все части S.T.A.L.K.E.R.</h2><p>Зона, мутанты, артефакты и жуткая атмосфера.</p></div>
+      <div class="game-card"><img src="images/stardew.jpg" alt="Stardew Valley"><h2>Stardew Valley</h2><p>Милая ферма, отношения и расслабляющий геймплей.</p></div>
+      <div class="game-card"><img src="images/terraria.jpg" alt="Terraria"><h2>Terraria</h2><p>Пиксельное приключение с крафтом и боссами.</p></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Мои любимые игры</p>
+  </footer>
+</body>
+</html>
